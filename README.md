@@ -46,3 +46,13 @@ LAZY LOADING ROUTES
 28. refactoring components import in const routes (router/index.js) to separate page files
 29. add navigation component
 30. add linkActiveClass into index.js and add css
+
+--
+
+DYNAMIC ROUTES
+
+31. add new route in router/index.js
+32. import dataSource in DestinationShow.vue
+33. add dataSource from json into DestinationShow page
+34. named routes
+35. clean up
