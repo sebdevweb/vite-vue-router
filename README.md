@@ -24,3 +24,17 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 16. add export in router/index.js
 17. add import router from router/index.js to main.js
 18. define routes in const
+
+--
+
+IMPORT ASSETS
+
+19. add new sources files in project (/images => /public, data.json => /src, main.css => /public)
+20. add main.css to index.html
+21. remove style form App.vue
+22. remove Homepage component
+23. wrap <router-view> in App.vue
+24. add new component Brazil.vue
+25. rename /components to /views
+26. add others components (Jamaica, Panama, Hawaii)
+27. import datas in App.vue
