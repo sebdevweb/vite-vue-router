@@ -38,3 +38,11 @@ IMPORT ASSETS
 25. rename /components to /views
 26. add others components (Jamaica, Panama, Hawaii)
 27. import datas in App.vue
+
+-- 
+
+LAZY LOADING ROUTES
+
+28. refactoring components import in const routes (router/index.js) to separate page files
+29. add navigation component
+30. add linkActiveClass into index.js and add css
