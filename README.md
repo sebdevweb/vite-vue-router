@@ -56,3 +56,10 @@ DYNAMIC ROUTES
 33. add dataSource from json into DestinationShow page
 34. named routes
 35. clean up
+
+-- 
+
+REACTING TO PARAM CHANGES
+
+36. See the problems with dummy API
+37. route props
