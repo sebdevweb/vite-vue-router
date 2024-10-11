@@ -1,4 +1,5 @@
 <template>
+  <GoBack />
   <section v-if="destination" class="destination">
     <h1>{{ destination.name }}</h1>
     <div class="destination-details">
@@ -6,12 +7,33 @@
       <p>{{ destination.description }}</p>
     </div>
   </section>
+
+  <section class="experiences">
+    <h2>Top experiences in {{ destination.name }}</h2>
+    <div class="cards">
+      <router-link 
+        v-for="experience in destination.experiences" 
+        :key="experience.slug"
+        :to="{name: 'experience.show', params: {experienceSlug: experience.slug}}"
+      >
+        <ExperienceCard :experience="experience" />
+      </router-link>
+    </div>
+    <router-view />
+  </section>
+
 </template>
 
 
 <script>
+import ExperienceCard from '@/components/ExperienceCard.vue';
+import GoBack from '@/components/GoBack.vue'
 import sourceData from '@/data.json'
   export default {
+    components: {
+      ExperienceCard,
+      GoBack
+    },
     props: {
       id: { type: Number, required: true}
     },

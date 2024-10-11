@@ -63,3 +63,12 @@ REACTING TO PARAM CHANGES
 
 36. See the problems with dummy API
 37. route props
+
+--
+
+EXPERIENCE CARDS
+38. add section experiences
+39. add props experience in ExperienceCard.vue
+40. add ExperienceShow.vue
+41. add children route to /destination/ :id/:slug
+42. add go back component
